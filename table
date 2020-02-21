@@ -1,0 +1,15 @@
+1.给table加框
+table{
+    border:1px solid black;
+}
+如果不加th,td,以目前这样,只是给table加了个边框,里面如果也要的话需要这样:
+
+2.给全部加
+table,th,td{
+    border:1px solid black
+}
+
+3.各个框之间不要空隙
+table{
+    border-collapse:collapse;
+}

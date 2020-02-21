@@ -1,0 +1,29 @@
+1.语法:
+@media mediatype and|not|only (media feature){
+	CSS-Code;	
+}
+
+only：指定某种特定的媒体类型，可以用来排除不支持媒体查询的浏览器
+not：排除某种制定的媒体类型
+ 
+mediatype(媒体类型):screen手机电脑平板的屏幕.
+all:用于所有设备
+print:打印机和打印预览.
+speech:应用于屏幕阅读器等发声设备.
+
+
+2.响应式布局,开头通常写
+*{
+	box-sizing:border-box;
+}
+会让所有盒子紧紧挨着,通过百分比给盒子设定宽度,同一行要这么设置:
+.first_div{
+width:25%;
+}
+.second_div{
+width:75%;
+}
+如果first_div的宽度超过百分之25,第二个盒子就会下去.
+
+
+

@@ -1,0 +1,26 @@
+1.当鼠标划过时
+a:hover{
+    color:;
+}
+
+2.visited 
+有浏览器缓存的问题,大概意思只要访问过颜色就变了visited里设置的颜色了,
+此时,应当清除浏览器缓存,之后回归正常
+
+3.hover还可以用:
+font-size:150%; 划过改变字体大小
+background:#66ff66; 改变背景颜色
+text-decoration:underline; 划过加下划线
+
+4.border-bottom下划线
+border:none;
+border-bottom:none;去掉块级元素的边线.
+text-decoration:none;去的是内联元素的下划线,也可以叫做去掉文字的下划线;
+
+  更改光标常用:
+
+1.auto(text) 文字光标
+2.move 小手
+3.pointer 食指
+4.wait 转圈
+

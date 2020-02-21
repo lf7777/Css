@@ -1,0 +1,50 @@
+文本
+text-align 水平对齐方式
+vertical-align 垂直对齐方式
+
+1.文本转换
+text-transform:uppercase 转换大写
+               lowercase 转换小写
+               capitalize 首字母大写
+
+2.文本线
+text-decoration:none
+可以给<a>标签添加属性,将链接下面的下划线去掉
+
+text-decoration:overline    文本上加线
+text-decoration:line-through	文本中间加线
+text-decoration:underline    文本下加线
+
+3.行高
+100%是正常行高,表示紧挨着
+p{
+    line-height:200%;
+}
+
+4.字间距
+word-spacing:10px;
+注意:使用这个样式的前提是在文本内容中间有空格.
+
+5.字体
+(1)大小
+默认大小是16px;
+font-size:100%;
+font-size:200%;
+font-size:30px;
+
+(2)style
+font-style:normal;    正常
+font-style:italic;    斜体
+
+(3)字体粗细
+font-weight:bold;
+font-weight:900;
+
+6.font-weight:500 直接写数字,不带px
+
+7.下划线虚点 border-bottom:1px dotted;
+
+8.     sans serif 与serif
+翻译:	无  衬线     衬线
+二者区别:无衬线, 有衬线.
+

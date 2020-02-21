@@ -1,0 +1,41 @@
+position:位置
+(1) static 静态定位 
+	position:static;
+	给left:30px是没有反应的;
+
+(2) relative 按照元素的原始位置对该元素进行移动,可以用-,不随窗口滚动变化
+    position:relative;
+        left:20px 等于 right:-20px;
+        left:-20px 等于 right:px;
+
+(3) fixed 相对浏览器窗口是固定的,随窗口变化
+    position:fixed;
+        top: 距离顶部
+        left: 距离左侧
+        right: 距离右侧
+        bottom: 距离底部
+
+(4) absolute 相对于最近的元素位置,如果没有,相对于html
+    position:absolute;
+	left:
+	top:
+
+(5) sticky 粘贴定位
+
+
+经验:
+1.relative:
+移动元素时,是根据它原本在文档流的位置移动,不脱离文档流,移动走了以后原本占的空间不会改变.
+
+2.absolute:
+位置相对于已定位的父元素,比它大的元素.比如可以给大的div一个position:relative就算定位.absulute定位元素的位置与文档流无关,因此不占据空间,也可以与其他元素重叠.
+
+3.用了position就不能用margin.
+
+4.position的relative第一个用处是在原地定义一个父类,给absolute使用,移动了relative之后,>原本位置的文档流还在,absolute是切换到其他的文档流了,float也是,但是float想叠加的话,两
+个div都要float,如果是双列的,多行的就没法用float了.
+
+5.relative是相对定位,相对于原本位置,不会离开文档流,原本位置空着.
+absolute 绝对定位,绝对于父级元素进行定位.
+
+6.position:fixed;之后不占文档流.

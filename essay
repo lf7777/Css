@@ -1,0 +1,116 @@
+Css笔记:
+
+1.语法:
+Css规则由两部分构成:选择器,以及一条或多条声明:
+属性 : 值
+color (叫属性) : blue (叫值)
+style属性可以包含任务css属性
+
+2.选择器:
+(1).id 
+(2)class 
+(3)html标签选择器 
+
+(4)标签内部写css(style)
+选择器的优先级:
+4>1>2>3
+
+3.Css背景
+常用:
+background-repeat:no-repeat; 设置背景图像是否及如何重复。基本不重复
+background-attachment:fixed; 固定一个背景图像
+background-repeat:repeat-x; 正常竖向平铺,加x横向为正常
+
+4.文本
+text-transform:uppercase 转换大写
+ 		 lowercase 转换小写
+		 capitalize 首字母大写
+
+5.text-decoration:none
+可以给<a>标签添加属性,将链接下面的下划线去掉
+
+6.padding和margin 
+  css的属性值顺序为 上右下左
+如果不需要某一个,用0px补上
+  或者padding-top padding-right padding-bottom padding-left
+  只写两个值的时候第一个为顶底,第二个值为左右
+填充的三种方式:
+  padding-right:2cm;
+  padding-right:50%;
+  padding-right:20px;
+
+7.隐藏内容
+display:none;    不展示,且不占用空间;
+visibility:hidden    隐藏,占用空间
+
+8.显示在一条线上
+display:inline 
+
+9.div居中:
+1.margin:0 auto;
+前提是有宽度
+
+10.text-align:center
+可以让img的图片居中,文字内容等,并不能让div居中
+
+11.position的relative第一个用处是在原地定义一个父类,给absolute使用,移动了relative之后,>原本位置的文档流还在,absolute是切换到其他的文档流了,float也是,但是float想叠加的话,两
+个div都要float,如果是双列的,多行的就没法用float了.
+
+12.font-weight:100到900之间,不带px
+
+13.假想,有待验证:
+内容随着一边动是因为 只是设置了margin-left,没设margin-right,如果想其位置不跟随网页大小的改变而改变,也许左右同时都设置就可以了
+答:错的,试过了根本不存在.
+
+14.改响应式布局时,float的值可以是none.
+
+15.Css文件里类的新写法:(类似正则);
+class这个属性是html的
+<div class="b"></div>
+在Css文件里不止可以写:
+(1).b{}
+还可以:
+(2)[class="b"]{}
+(3)[class*="b"]{}
+所有包含b的class.
+(4)举一反三:
+[class^="b"]{}
+所有以b开头的类.id估计也是可以这么写.再或者[class$="b"]{},以b结尾的class.
+
+16.box-sizing:border-box;
+意思是给了宽度,无论怎么给padding,该宽度是不会改变的.
+
+17.direction:rtl;会修改排列方式,会让子元素rtl(right-to-left),即从右到左排列
+direction:ltr;即左到右排列.
+然而并没有上到下或者下到上排列的指令.
+
+18.inherit 规定应该从父元素继承...
+
+19.:before and :after.在之前和之后.
+例如 .a:before{
+	content:"Email";会在Css文件里面给Html的a标签添加Email内容.after则是在后面加.
+}
+还有其他用法,待拓展.
+
+20.outline只是挨着border,但是在外侧的一条装饰轮廓而已,并不是margin的外侧线.
+
+21.
+.row:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+创造一个内容为空，然后空是不能清除两侧的浮动，如果写一个文字的话影响美观，所以第二行使其变为块元素，最后清除两侧浮动，最终目的是让下面不浮动的块元素不进入上方浮动的元素。
+
+22.float设置的是和文字在一个层面上,表现为文字环绕,但是其他的内容如果不做处理会覆盖其浮动的内容.
+
+23.max-width:最大宽度不超过%dpx的时候.
+   min-width:最小宽度不低于%dpx的时候.
+
+24.响应式使用条件:
+如果页面不复杂,可用响应式,节约时间.
+一套代码,适用于多种设备.
+
+如果很复杂,类似于京东淘宝则需要设计两套代码.
+
+25.样式最后一行不写分号.

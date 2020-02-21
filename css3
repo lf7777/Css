@@ -1,0 +1,62 @@
+1.渐变
+background-color:/*浏览器不支持显示*/
+background-image:linear-gradient(#e66465,#9198e5);
+
+background-image:linear-gradient(red,blue)
+
+2.动画
+浅试第一种语法:
+
+在class里写
+{
+    animation:自定义名字空格自定义时间
+}
+
+@keyframes 自定义的名字{
+    
+}
+
+(1).旋转:
+只旋转一下transform:rotate(7deg)  degree:角度
+无限旋转:
+    animation: star 3s linear infinite;
+}
+@keyframes star{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+3.圆角:
+border-radius:10px;
+还可以用border-radius:50%;
+
+4.阴影:
+box-shadow:10px 10px 5px #888888
+第一个值控制左右,第二个值控制上下,第三个值控制阴影的透明度 第四个值暂且不确定 第五个为颜色
+
+
+5.CSS3换行:
+word-wrap:break-word;
+
+6.多列:只有块级元素可以用.
+(1).div(p,h1,)
+{
+	-moz-column-count:3; /* Firefox */
+	-webkit-column-count:3; /* Safari and Chrome */
+	column-count:3;将内容分为3段,图片应该也是可用的.直到充满宽度
+}
+
+(2)多列中的间隙:
+	column-gap:40px;
+
+(3)多列中的 列边框:
+	column-rule-style:dotted;
+
+(4)指定列宽
+column-width:100px;
+
+5.box-sizing:border-box;

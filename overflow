@@ -1,0 +1,7 @@
+1.overflow:visble;默认值,内容不会被修剪,会呈现在元素框之外.
+2!.overflow:hidden;内容会被修剪,并且其余内容是不可见的.
+3.overflow:scroll;内容会被修剪,会直接以滚动条显示.
+4!.overflow:auto;如果内容被修剪,先展示框高度内的所有值,再可以滚动显示.
+5.inherit;规定应该从父元素集成overflow属性的值.
+
+overflow的值就是以超出的内容被不被修剪来区分的.

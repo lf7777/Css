@@ -1,0 +1,61 @@
+ decoration 装饰品
+
+ indent 缩进
+
+ margin 页边距离
+
+ padding 内边距
+
+ dimension 尺寸
+
+ display 展示
+
+{
+ visibility 可见性
+
+ visible 可见的
+
+ hidden 隐藏
+}
+
+ initial 最初的
+
+ inherit 继承
+
+ inline 在一条线上的
+
+ position:位置
+
+ static 默认值,没有定位
+
+ relative 相对的
+
+ fixed 固定的
+
+ absolute 完全的
+
+ sticky 粘贴定位
+
+ cursor 光标
+
+ scroll 滚动
+
+ viewport 视区
+
+ device 设备
+
+ linear-gradient 线性的变化
+
+ animation 动画
+
+ rotate 旋转
+
+ infinite 无限的
+
+ flex 拉伸
+
+ wrap 泛指换行的意思.
+
+ feature 特征
+
+ expressions 表达式

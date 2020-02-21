@@ -1,0 +1,16 @@
+ul.a{
+    list-style-type:circle;    空心圆
+	list-style-type:square;    实心黑点
+}
+
+list-style-type:none;去除前缀.
+
+序号为图片
+ul.a{
+    list-style-image:url();
+}
+
+ul ol 没有 caption标签
+
+1.
+li是块元素,表现为一行.ul也是块元素,表现为包括li并且包括了li前面的符号.

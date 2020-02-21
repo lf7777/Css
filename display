@@ -1,0 +1,23 @@
+1.divplay:inline;
+
+.div,.div2{
+    display:inline;
+}
+display:inline;会将块级元素隐藏,仍会占用空间.此时两个div到了一行.
+所以块级元素的宽高都没了,它占用着空间,这时往div里写东西,div被撑开,并会显示为同一行.
+
+2.display:inline-block
+
+如果想让两个给了宽高的div在一行,需要这样来做
+.div,.div2{
+    display:inline-block;
+}
+显示为内联块元素,变现为同行显示,并可以修改宽高内外边距等属性.
+
+3.display:hidden;
+隐藏元素,但仍会影响布局.
+
+4.display:none;
+
+不但会隐藏,其空间也会消失.
+
